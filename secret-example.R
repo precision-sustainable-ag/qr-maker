@@ -1,0 +1,1 @@
+gs_key_for_qr <- "<long google sheets ID key>"
