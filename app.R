@@ -16,7 +16,7 @@ source("barcode_for_weeds.R")
 # auth_token <- gs_auth()
 # saveRDS(auth_token, "auth_token.rds")
 
-gs_auth("auth_token.rds")
+gs_auth("auth_token.rds", cache = F)
 
 
 underliner <- function(strings, colors, size) {
