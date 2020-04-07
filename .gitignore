@@ -166,3 +166,6 @@ secret.txt
 secret.R
 auth_token.rds
 
+# temp files
+/temp/
+
