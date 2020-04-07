@@ -5,6 +5,7 @@ library(stringr)
 library(scales)
 library(glue)
 library(googlesheets)
+# TODO GS4
 
 # HTTP2 Chrome fix
 httr::set_config(httr::config(http_version = 0))
@@ -194,6 +195,7 @@ server <- function(input, output, session) {
         new_row <- labs() %>% select(Site, Block, Treatment, Quadrat, Timing) %>% 
           map(unique) %>% map(paste, collapse = "/") %>% unlist()
         
+        # TODO GS4
         gs_add_row(
           gs_key(gs_key_for_qr, lookup = F, visibility = "private"),
           input = new_row
